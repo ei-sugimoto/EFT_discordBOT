@@ -8,6 +8,10 @@
   ],
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ei-sugimoto/EFT_discordBOT.git"
+  },
   "scripts": {
     "test": "ts-node example/main.ts",
     "start": "node dist/index.js",
