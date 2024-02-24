@@ -1,13 +1,10 @@
-//必要なパッケージをインポートする
 import { GatewayIntentBits, Client, Partials, Message, MessageManager} from 'discord.js'
 import dotenv from 'dotenv'
-import {EFTMapsMessage, Map} from './EFTMapsMessage'
+import {EFTMapsMessage, Map} from '../src/EFTMapsMessage'
 
 
-//.envファイルを読み込む
 dotenv.config()
 
-//Botで使うGatewayIntents、partials
 const client = new Client({
     intents: [
       GatewayIntentBits.DirectMessages,
@@ -19,7 +16,6 @@ const client = new Client({
     partials: [Partials.Message, Partials.Channel],
   })
 
-//Botがきちんと起動したか確認
 client.once('ready', () => {
     console.log('Ready!')
     if(client.user){
@@ -35,6 +31,4 @@ client.on('messageCreate', async (message: Message) => {
     eftMapsMessage.sendMap(message, map)
 })  
 
-
-//ボット作成時のトークンでDiscordと接続
 client.login(process.env.TOKEN)
