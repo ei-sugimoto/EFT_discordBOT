@@ -1,8 +1,6 @@
 import { GatewayIntentBits, Client, Partials, Message, MessageManager} from 'discord.js'
 import dotenv from 'dotenv'
-import {EFTMapsMessage, Map} from '../src/EFTMapsMessage'
-
-
+import {EFTMapsMessage, Map} from '@ei-sugimoto/eft_discordbot'
 dotenv.config()
 
 const client = new Client({
