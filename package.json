@@ -1,6 +1,6 @@
 {
   "name": "@ei-sugimoto/eft_discordbot",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "EFTのDiscordBot",
   "files": [
     "images/*",
