@@ -1,4 +1,4 @@
-# Escape_from_Trakov_maps_DiscordBot
+# Escape_from_Trakov_maps_DiscordBot　![npm](https://img.shields.io/npm/dt/@ei-sugimoto/eft_discordbot.svg)
 
 ## Demo
 ![DEMO](./DEMO.png)
